@@ -13,7 +13,7 @@ OAuth2.0 Authorization Implementation using different backend frameworks. The OA
 
 ## Installation
 
-Each folder has its own README that explains the installation process for whichever backend framework you wish to install 
+I will be adding a README to each folder that will explain the installation process for whichever backend framework you wish to install 
 
 
 ## Contributing
