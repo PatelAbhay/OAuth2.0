@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="./static/index.css">
+{% endblock %}
+
+{% block content %}
+<h1 class="title">Choose Login Method</h1>
+<ul class="card-grid">
+    <li class="card-outline">
+        <div class="card-layout">
+            <div class="card-layout">
+                <div class="card-title">
+                    <h1>Github</h1>
+                </div>
+                <div class="card-description">
+                    <p>Redirects you to login with Github</p>
+                </div>
+                <a class="btn" href="{{url_for('github_login')}}">
+                    <button class="button is-block is-info is-large is-fullwidth">Login</button>
+                </a>
+            </div>
+        </div>
+    </li>
+    <li class="card-outline">
+        <div class="card-layout">
+            <div class="card-layout">
+                <div class="card-title">
+                    <h1>Google</h1>
+                </div>
+                <div class="card-description">
+                    <p>Redirects you to login with Google</p>
+                </div>
+                <a class="btn" href="{{url_for('google_login')}}">
+                    <button class="button is-block is-info is-large is-fullwidth">Login</button>
+                </a>
+            </div>
+        </div>
+    </li>
+    <li class="card-outline">
+        <div class="card-layout">
+            <div class="card-layout">
+                <div class="card-title">
+                    <h1>Discord</h1>
+                </div>
+                <div class="card-description">
+                    <p>Redirects you to login with Discord</p>
+                </div>
+                <a class="btn" href="{{url_for('discord_login')}}">
+                    <button class="button is-block is-info is-large is-fullwidth">Login</button>
+                </a>
+            </div>
+        </div>
+    </li>
+</ul>
+{% endblock %}
